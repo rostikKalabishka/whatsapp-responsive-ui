@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_responsive_ui/responsive/responsive_layout.dart';
+import 'package:whatsapp_responsive_ui/screens/mobile_screen.dart';
+import 'package:whatsapp_responsive_ui/screens/web_screens.dart';
 import 'package:whatsapp_responsive_ui/utils/colors.dart';
 
 void main() {
@@ -12,13 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: Scaffold(
-        backgroundColor: backgroundColor,
+      theme:
+          ThemeData.dark().copyWith(scaffoldBackgroundColor: backgroundColor),
+      home: const ResponsiveLayoutWidget(
+        mobileScreen: MobileScreenLayout(),
+        webScreen: WebScreenLayout(),
       ),
     );
   }
