@@ -48,15 +48,8 @@ class MobileScreenLayout extends StatelessWidget {
                 )
               ]),
         ),
-        body: const SizedBox(
-          height: double.infinity,
-          child: Contacts(),
-        ),
+        body: Contacts(),
       ),
     );
   }
-
-  // void goToDialog(int index , BuildContext context) {
-  //   Navigator.of(context).push(route)
-  // }
 }

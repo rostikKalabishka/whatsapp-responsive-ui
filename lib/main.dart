@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_responsive_ui/responsive/responsive_layout.dart';
+import 'package:whatsapp_responsive_ui/router/router.dart';
 import 'package:whatsapp_responsive_ui/screens/mobile_screen.dart';
 import 'package:whatsapp_responsive_ui/screens/web_screens.dart';
 import 'package:whatsapp_responsive_ui/utils/colors.dart';
@@ -17,12 +18,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
+      routes: router,
       theme:
           ThemeData.dark().copyWith(scaffoldBackgroundColor: backgroundColor),
-      home: const ResponsiveLayoutWidget(
-        mobileScreen: MobileScreenLayout(),
-        webScreen: WebScreenLayout(),
-      ),
     );
   }
 }
