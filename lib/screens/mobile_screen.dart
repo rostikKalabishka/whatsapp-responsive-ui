@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_responsive_ui/utils/colors.dart';
 
+import '../widgets/contacts.dart';
+
 class MobileScreenLayout extends StatelessWidget {
   const MobileScreenLayout({super.key});
 
@@ -10,6 +12,8 @@ class MobileScreenLayout extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
+          elevation: 0,
+          backgroundColor: appBarColor,
           title: const Text(
             'Whatsapp',
             style: TextStyle(
@@ -44,8 +48,15 @@ class MobileScreenLayout extends StatelessWidget {
                 )
               ]),
         ),
-        body: const Center(child: Text('Mobile')),
+        body: const SizedBox(
+          height: double.infinity,
+          child: Contacts(),
+        ),
       ),
     );
   }
+
+  // void goToDialog(int index , BuildContext context) {
+  //   Navigator.of(context).push(route)
+  // }
 }
