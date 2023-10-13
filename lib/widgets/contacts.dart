@@ -17,7 +17,7 @@ class Contacts extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {
-                  // return goToDialog(index, context, '${info[index]['name']}');
+                  return goToDialog(index, context, '${info[index]['name']}');
                 },
                 child: ListTile(
                   title: Text('${info[index]['name']}',
