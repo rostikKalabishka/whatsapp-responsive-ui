@@ -1,6 +1,6 @@
 const info = [
   {
-    'name': 'Rivaan Ranawat',
+    'name': 'Rostik Kalabishka',
     'message': 'Hey, how are you doing?',
     'time': '3:53 pm',
     'profilePic':
@@ -28,7 +28,7 @@ const info = [
         'https://pbs.twimg.com/profile_images/1419974913260232732/Cy_CUavB.jpg',
   },
   {
-    'name': 'Mom',
+    'name': 'Rostik Kalabishka',
     'message': 'You ate food?',
     'time': '10:00 am',
     'profilePic':
