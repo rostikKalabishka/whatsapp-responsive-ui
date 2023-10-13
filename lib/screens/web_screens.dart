@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_responsive_ui/widgets/contacts.dart';
 
+import '../widgets/chat_list.dart';
 import '../widgets/web_widget/web_chat_appbar.dart';
 import '../widgets/web_widget/web_profile_bar.dart';
 import '../widgets/web_widget/web_search_bar.dart';
@@ -31,6 +32,10 @@ class WebScreenLayout extends StatelessWidget {
           ),
           child: const Column(children: [
             WebChatAppBar(),
+            SizedBox(height: 20),
+            Expanded(
+              child: ChatList(),
+            ),
           ]),
         ),
       ]),
